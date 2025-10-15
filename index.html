@@ -6,10 +6,13 @@
     <title>Marcos Solé | FE Dev</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    
-    <link rel="icon" type="image/png" href="assets/img/portfolio/react.svg">
 
-   
+    <link rel="icon" type="image/png" href="assets/img/portfolio/react.svg" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/img/profile/fotoperfilW.webp"
+    />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -38,14 +41,6 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.style.css" />
-
-    <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body class="index-page">
@@ -56,11 +51,6 @@
       <div
         class="container position-relative d-flex align-items-center justify-content-between"
       >
-        <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
@@ -151,9 +141,11 @@
               <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
                 <div class="image-wrapper">
                   <img
-                    src="assets/img/profile/fotoperfil-.png"
+                    src="assets/img/profile/fotoperfilW.webp"
                     alt="Marcos Solé"
                     class="img-fluid"
+                    fetchpriority="high"
+                    loading="eager"
                   />
                   <div class="floating-elements">
                     <div
